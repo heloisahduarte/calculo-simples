@@ -1,5 +1,5 @@
 function cliqueCalcular() {
     
-    
-    alert("Botão clicado! Lógica de cálculo ainda não implementada.");
+    let numero1 = document.getElementById("numero1").value;
+    let numero2 = document.getElementById("numero2").value;
 }
