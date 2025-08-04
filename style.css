@@ -13,6 +13,7 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -77,6 +78,27 @@ h1 {
 
     position: relative;
     top: 30px;
+}
+
+
+.resultado {
+    
+    display: block;   
+
+    width: 600px;
+    height: 100px;
+    
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+
+    align-items: center;
+
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    background-color: rgb(140, 193, 214);
+    margin-top: 30px;
+
 }
 
 @media (max-width:1000px) {
