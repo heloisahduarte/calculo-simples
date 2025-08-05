@@ -6,36 +6,38 @@ function Calcular() {
     let numero1 = document.getElementById("numero1").value;
     let numero2 = document.getElementById("numero2").value;
 
-
     //2- Transformar o número que o usuário digitou em um número
     numero1 = Number(numero1);
     numero2 = Number(numero2);
 
-
+    //3- Fazer as contas
     let soma = numero1 + numero2;
     let subtracao = numero1 - numero2;
     let multiplicacao = numero1 * numero2;
+    let divisao = numero1 / numero2;
 
-    //3- Mostrar o resultado na tela
+    //4- Guardar os resultados em um array
+    let resultados = [
+        `soma: ${soma}`,
+        `subtração: ${subtracao}`,
+        `multiplicação: ${multiplicacao}`,
+        `divisão: ${divisao}`
+    ];
+
+    //5- Passar os resultados para a função de renderização
+    renderizarResultado(resultados);
 }
 
-function resultado() {
+function renderizarResultado(resultados) {
 
-    let listaResultado = document.getElementById("listaResultado");
-    listaResultado.innerHTML = ""
+    const listaResultado = document.getElementById("listaResultado");
+    listaResultado.innerHTML = ""; // Limpa a lista antes de adicionar novos resultados     
 
-    let item = document.createElement("li");
+    for ( let i = 0; i < resultados.length; i++ ) {
+        let novoCalculo = document.createElement("li");
+        novoCalculo.innerText = resultados[i];
+        listaResultado.appendChild(novoCalculo);
+    };
 
-    item.textContent = "Sosma: ${numero1} + ${numero2} = ${soma}";
-    listaResultado.appendChild(item);
-
-    item = document.createElement("li");
-    item.textContent = "Subtração: ${numero1} - ${numero2} = ${subtracao}";
-    listaResultado.appendChild(item);   
-
-    item = document.createElement("li");
-    item.textContent = "Multiplicação: ${numero1} * ${numero2} = ${multiplicacao}";
-    listaResultado.appendChild(item);   
-
-
+   
 }
