@@ -26,6 +26,9 @@ function Calcular() {
 
     //5- Passar os resultados para a função de renderização
     renderizarResultado(resultados);
+
+    //6- Limpar os campos
+    Calcular.value = "";
 }
 
 function renderizarResultado(resultados) {
