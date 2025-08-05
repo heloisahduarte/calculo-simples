@@ -55,7 +55,19 @@ input {
     display: block;
     width: 80%;
     padding: 10px 20px;
-    margin: 45px 0;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+select {
+    display: block;
+    width: auto;
+    padding: 10px 20px;
+    margin: 20px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     position: relative;
@@ -106,42 +118,17 @@ h2 {
 }
 
 ul {
-    background-color: rgb(223, 95, 21) ;
-    
+    list-style: circle;
 }
 
 ul, li {
+    font-family: var(--fonte-padrao);
+    font-size: 18px;;
     background-color: rgb(223, 95, 21);
-    padding: 5px;
     margin: 5px;
     border-radius: 10px;
 }
 
-
-#resultado {
-    
-    display: block;   
-
-    width: 600px;
-    min-height: 100px;
-    
-    box-sizing: border-box;
-    justify-items: center;
-    align-items: center;
-
-    align-items: center;
-
-    border: 2px solid skyblue;
-    border-radius: 10px;
-    background-color: rgb(140, 193, 214);
-    margin-top: 30px;
-
-}
-
-h2 {
-    font-family: var(--fonte-destaque);
-    font-size: 25px;
-}
 
 @media (max-width:1000px) {
 
@@ -173,8 +160,13 @@ h2 {
 
     h1 {
         font-size: 35px;
-    
     }
+
+    ul, li {
+        background-color: rgb(140, 193, 214);
+    }
+
+
 }
 
 @media (max-width:450px) {
@@ -209,5 +201,9 @@ h2 {
     h1 {
         font-size: 35px;
     
+    }
+
+    ul, li {
+        background-color: rgb(223, 95, 21);
     }
 }
