@@ -41,6 +41,15 @@ body {
 
 }
 
+h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 40px;
+    text-align: center;
+
+    position: relative;
+    top: 30px;
+}
+
 input {
     text-align: center;
     display: block;
@@ -71,13 +80,41 @@ button {
     top: 20px;
 }
 
-h1 {
-    font-family: var(--fonte-destaque);
-    font-size: 40px;
-    text-align: center;
+#resultado {
+    
+    display: block;   
 
-    position: relative;
-    top: 30px;
+    width: 600px;
+    min-height: 100px;
+    
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+
+    align-items: center;
+
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    background-color: rgb(140, 193, 214);
+    margin-top: 30px;
+
+}
+
+h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 25px;
+}
+
+ul {
+    background-color: rgb(223, 95, 21) ;
+    
+}
+
+ul, li {
+    background-color: rgb(223, 95, 21);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 
@@ -125,7 +162,7 @@ h2 {
 
     #resultado {
         width: 400px;
-        height: 120px;
+        min-height: 120px;
         margin-top: 30px; /* Espaço acima e centralização */
         background-color: rgb(223, 95, 21);
     }
@@ -161,7 +198,7 @@ h2 {
 
     #resultado {
         width: 350px;
-        height: 120px;
+        min-height: 120px;
         margin-top: 30px; /* Espaço acima e centralização */
         background-color: rgb(140, 193, 214);
     }
