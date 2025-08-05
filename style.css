@@ -125,7 +125,7 @@ h2 {
 
     #resultado {
         width: 400px;
-        height: 120px;
+        min-height: 120px;
         margin-top: 30px; /* Espaço acima e centralização */
         background-color: rgb(223, 95, 21);
     }
@@ -161,7 +161,7 @@ h2 {
 
     #resultado {
         width: 350px;
-        height: 120px;
+        min-height: 120px;
         margin-top: 30px; /* Espaço acima e centralização */
         background-color: rgb(140, 193, 214);
     }
