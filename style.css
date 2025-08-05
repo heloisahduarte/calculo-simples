@@ -101,6 +101,11 @@ h1 {
 
 }
 
+h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 25px;
+}
+
 @media (max-width:1000px) {
 
     body {
@@ -115,6 +120,13 @@ h1 {
         width:400px;
         height:420px;
 
+        background-color: rgb(223, 95, 21);
+    }
+
+    .resultado {
+        width: 400px;
+        height: 120px;
+        margin-top: 30px; /* Espaço acima e centralização */
         background-color: rgb(223, 95, 21);
     }
 
@@ -142,6 +154,15 @@ h1 {
         width: 350px;
         height: 420px;
 
+        background-color: rgb(140, 193, 214);
+
+        
+    }
+
+    .resultado {
+        width: 350px;
+        height: 120px;
+        margin-top: 30px; /* Espaço acima e centralização */
         background-color: rgb(140, 193, 214);
     }
 
