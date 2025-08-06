@@ -112,6 +112,13 @@ button {
 
 }
 
+#listaResultado {
+   
+    min-height: 80px; /* Altura mínima */
+    padding: 10px;
+    border-radius: 8px;
+}
+
 h2 {
     font-family: var(--fonte-destaque);
     font-size: 25px;
