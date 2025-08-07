@@ -10,11 +10,27 @@
     <div class="container">
         <h1>Calculadora Simples</h1>
 
-         <input type="number" id="numero1" placeholder="Digite o primeiro número">
+        <input type="number" id="numero1" placeholder="Digite o primeiro número">
+
+        <select name="" id="operador">
+            <option value="soma">+</option>
+            <option value="subtracao">-</option>
+            <option value="multiplicacao">*</option>
+            <option value="divisao">/</option>
+        </select>
+
         <input type="number" id="numero2" placeholder="Digite o segundo número">
 
         <button onclick="Calcular()">Calcular</button>
     </div>
+
+    <div id="resultado">
+        <h2>Resultado</h2>
+
+        <ul id="listaResultado"></ul>
+    </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
