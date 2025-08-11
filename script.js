@@ -51,7 +51,7 @@ function Calcular() {
     
 }
 
-function renderizarResultado(resultados) {
+function renderizarResultado(resultado) {
 
     // 8 - Selecionar a lista de resultados no HTML
     const listaResultado = document.getElementById("listaResultado");
@@ -59,9 +59,9 @@ function renderizarResultado(resultados) {
 
 
     // 9 - Adicionar cada resultado como um item da lista
-    for ( let i = 0; i < resultados.length; i++ ) {
+    for ( let i = 0; i < resultado.length; i++ ) {
         let novoCalculo = document.createElement("li");
-        novoCalculo.innerText = resultados[i];
+        novoCalculo.innerText = resultado[i];
         listaResultado.appendChild(novoCalculo);
     };
 
