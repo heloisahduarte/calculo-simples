@@ -135,7 +135,7 @@ ul, li {
 }
 
 
-@media (max-width:1000px) {
+@media screen and (max-width:1000px) {
 
     body {
         display: flex;
@@ -155,7 +155,7 @@ ul, li {
     #resultado {
         width: 400px;
         min-height: 120px;
-        margin-top: 30px; /* Espaço acima e centralização */
+        margin-top: 30px;
         background-color: rgb(223, 95, 21);
     }
 
@@ -174,7 +174,7 @@ ul, li {
 
 }
 
-@media (max-width:450px) {
+@media screen and (max-width:450px) {
 
     body {
         display: flex;
@@ -195,7 +195,7 @@ ul, li {
     #resultado {
         width: 350px;
         min-height: 120px;
-        margin-top: 30px; /* Espaço acima e centralização */
+        margin-top: 30px;
         background-color: rgb(140, 193, 214);
     }
 
